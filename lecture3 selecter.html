@@ -8,7 +8,7 @@
 
      <style>
         div{
-            background-color:rgb(222, 21, 21);
+            background-color:rgb(21, 222, 48);
             width:80%;
         }
         .div2{
@@ -17,21 +17,23 @@
         }
         .div3{
             background-color: rgb(115, 23, 202);
+            content:"$";
+            color: black;
         }
         .div4::selection{
             background-color: rgb(30, 210, 78);
         }
      </style>
      <div id="div1">
-        <p>GLA UNIVERSITY</p>
+        <p>VARANASI</p>
         <div class="div2">
-            <p>MATHURA</p>
+            <p>BUGATTI</p>
         </div>
         <div class="div3">
-            <p>ENGINEERING COLLEGE</p>
+            <p>RANGE ROVER</p>
         </div>
         <div class="div4">
-            <p>UTTAR PRADESH</p>
+            <p>MATHURA</p>
 
         </div>
         
@@ -43,10 +45,10 @@
         }
         .sibling-list {
             list-style-type: none;
-            padding: 0;
+            padding: 10vw ;                                                          
         }
         .sibling-list li {
-            background-color: whitesmoke;
+            background-color:rgb(221, 68, 12);
             margin: 5px 0;
             padding: 10px;
             border-radius: 5px;
@@ -68,7 +70,7 @@
     <style>
 
         h2{
-            color:red;
+            color:green;
         }
         p::first-letter {
             color: rgb(67, 17, 175);
@@ -76,6 +78,7 @@
             font-weight: bold;
             float: left;
             margin-right: 5px; 
+            
         }
         p{
             font-weight: 800;
@@ -88,10 +91,23 @@
         h2:hover+.hidden{
             display:block;
         }
+        div{
+            border:1rem solid rgb(200, 19, 119);
+            padding: 1px 2px 3px 4px;
+        }
+        .innerBox{
+            height:10px;
+            padding:20px;
+            background-color: rgb(231, 11, 161);
+        }
+        
+
+        
 </style>
     <body>
         <h2>SEE INSIDE THE BOX</h2>
-        <p class="hidden">YOU ARE HOMELANDER.</p>
+        <p class="hidden">I AM HOMELANDER.</p>
+        
 
     </body>
 </head>    
