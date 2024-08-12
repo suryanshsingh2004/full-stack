@@ -1,199 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESUME</title>
+    <title>Container Layout Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .big-container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color:skyblue;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header,
+        nav {
+            width: 100%;
+            padding: 20px;
+            border: 5px solid rgb(15, 164, 214);
+            background-color: azure;
+            color: black;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .content-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        section,
+        aside {
+            position:relative;
+            width: 50%;
+            height: 100%;
+            padding: 20px;
+            border: 5px solid green;
+            background-color: #f0f0f0;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        article {
+            width: 50%;
+            padding: 20px;
+            border: 5px solid pink;
+            background-color: #dcdcdc;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            width: 100%;
+            padding: 20px;
+            border: 5px solid darkblue;
+            background-color: azure;
+            color: black;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="container">
-        <header>RESUME</header>
-        <div>web developer</div>
-            <h1>SURYANSH SINGH </h1>
-       <h1>Profile</h1>
-            <img src="C:\Users\ccs\Downloads\Virat_Kohli_in_PMO_New_Delhi.jpg" alt="STUDENT">
-            <ol>123</ol>
-            <ul>cvb</ul>
-            <h2>personel details</h2>
-            <p>address given</p>
-            <p>hobbies</p>
-            <style>
-                th{
-                    color:blue;
-                    font-size:medium;
-                }
-            </style>
-            <style>
-                tr{
-                    color:red;
-                }
-            </style>
-            <table>
-                
-                <th>sno</th>
-                <th>educational detail</th>
-                <th>grade</th>
-                <tr>
-                    <td>1</td>
-                    <td>10th</td>
-                    <td>84%</td>
-    
-                </tr>
-                <br>
-                <tr>
-                    <td>2</td>
-                    <td>12th</td>
-                    <td>82%</td>
-    
-                </tr>
-            </Table>
-            <a href="mailto:suryansh.singh_cs22@gla.ac.in">email id</a>
-            <br>
-            <a href="contact form.html">Contact details</a>
-            <br>
-
-            <b>T</b><sub>e</sub><u>x</u><sup>t</sup> FORMATTING
-            <br>
-            <table>
-                <td>institute name</td>
-                
-            </Table>
-            <br>
-            <table>
-                <table>
-                    <tr>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
-            </table>
-            <a href="https://www.youtube.com/"></a>
-            <img src="" alt="no image">
-            <br>
-            <centre> Time Table
-                <table border="">
-                    <tr>
-                        <th>day</th>
-                        <th>monday</th>
-                        <th>tuesday</th>
-                        <th>wednesday</th>
-                        <th>thursday</th>
-                        <th>friday</th>
-                        <th>saturday</th>
-                        <th>sunday</th>
-
-                    </tr>
-                    <tr>
-                        
-                        <td>10-11</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>holiday</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>11-12</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>holiday</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>12-01</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>holiday</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>o1-02</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>holiday</td>
-                        
-                    </tr>
-                    <tr>
-                        <
-                        <td>02-03</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>full stack</td>
-                        <td>holiday</td>
-                    </tr>
-                    <tr>
-                        <td>holiday</td>
-                    </tr>
-                    <tr>
-                        <td>holiday</td>
-                    </tr>
-
-            </centre>
-            <h1>Login</h1>
-
-            <form>
-
-                <label for="username">Username:</label>
-                <input type="text"id="username"name="username" placeholder="enter user name"required>
-                <br>
-                <label for="uni roll no.">Roll no.:</label>
-                <input type="text"id="uni roll no."name="uni roll no." placeholder="enter uni roll no."required>
-                <br>
-                <label for="email">Emailid:</label>
-                <input type="text"id="email"name="email"required>
-                <br>
-                <label for="password">Password:</label>
-                <input type="password"id="password"name="pasword"required>
-                <br>
-                <button type="submit">Login</button>
-                <br>
-                <label for="gender">Gender:</label>
-                <select id="gender" name="Gender" required>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                    </select>
-    
-
-            </form>
-            
-
-            
-            
-    
+    <div class="big-container">
+        <header>
+            <h1>header</h1>
+        </header>
+        <nav>
+            <h2>nav</h2>
+        </nav>
+        <div class="content-container">
+            <section>
+                <h2>section</h2>
+            </section>
+            <article>
+                <h2>aside</h2>
+            </article>
+            <aside>
+                <h2>article</h2>
+            </aside>
+        </div>
+        <footer>
+            <h2>footer</h2>
+        </footer>
+    </div>
 </body>
+
 </html>
