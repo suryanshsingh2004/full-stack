@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navigation Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: grey;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(213, 94, 20);
+            color: black;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        nav {
+            background-color: rgb(43, 17, 215);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 10px 0;
+        }
+
+        nav h2 {
+            color: black;
+            text-align: center;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        section {
+            padding: 20px;
+            display:inline-block;
+            text-align: center;
+        }
+
+        section .content {
+            display:inline-block;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: rgb(23, 156, 23);
+            color: black;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            position: sticky;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>H E A D E R</h1>
+    </header>
+
+    <nav>
+        <h2>NAVIGATION BAR</h2>
+    </nav>
+
+    <section>
+        <h2>NORAMAL CONTENT</h2>
+        <p>This is a simple webpage with a sticky navigation bar.</p>
+        <p>Scroll down to see the sticky navigation bar in action.</p>
+        <div class="content">
+            <p>GLA UNIVERSITY MATHURA UTTAR PRADESH.BTECH COMPUTER SCIENCE AND ENGINEERING. </p>
+            <p>GLA UNIVERSITY MATHURA UTTAR PRADESH.BTECH COMPUTER SCIENCE AND ENGINEERING.</p>
+            <p>GLA UNIVERSITY MATHURA UTTAR PRADESH.BTECH COMPUTER SCIENCE AND ENGINEERING. </p>
+            <p>GLA UNIVERSITY MATHURA UTTAR PRADESH.BTECH COMPUTER SCIENCE AND ENGINEERING. </p>
+            <p>GLA UNIVERSITY MATHURA UTTAR PRADESH.BTECH COMPUTER SCIENCE AND ENGINEERING. </p>
+            <p>GLA UNIVERSITY MATHURA UTTAR PRADESH.BTECH COMPUTER SCIENCE AND ENGINEERING. </p>
+            <p>GLA UNIVERSITY MATHURA UTTAR PRADESH.BTECH COMPUTER SCIENCE AND ENGINEERING. </p>
+            <p>GLA UNIVERSITY MATHURA UTTAR PRADESH.BTECH COMPUTER SCIENCE AND ENGINEERING. </p>
+            <p>GLA UNIVERSITY MATHURA UTTAR PRADESH.BTECH COMPUTER SCIENCE AND ENGINEERING. </p>
+            <p>GLA UNIVERSITY MATHURA UTTAR PRADESH.BTECH COMPUTER SCIENCE AND ENGINEERING. </p>
+            <p>GLA UNIVERSITY MATHURA UTTAR PRADESH.BTECH COMPUTER SCIENCE AND ENGINEERING. </p>
+            <p>GLA UNIVERSITY MATHURA UTTAR PRADESH.BTECH COMPUTER SCIENCE AND ENGINEERING. </p>
+            <p>GLA UNIVERSITY MATHURA UTTAR PRADESH.BTECH COMPUTER SCIENCE AND ENGINEERING. </p>
+            <p>GLA UNIVERSITY MATHURA UTTAR PRADESH.BTECH COMPUTER SCIENCE AND ENGINEERING. </p>
+            <p>GLA UNIVERSITY MATHURA UTTAR PRADESH.BTECH COMPUTER SCIENCE AND ENGINEERING. </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>FOOTER FOOTER FOOTER </p>
+    </footer>
+    <style>
+        div{
+            border:2px solid red;
+            margin-bottom: 5px;
+            padding: 5px;
+            display: flex;
+
+        }
+    </style>
+</body>
+
+</html>
