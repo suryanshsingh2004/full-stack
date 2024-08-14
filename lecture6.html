@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<script>>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const links=[
+           // {url:'https://www.google.co.in/',text:"Google"},
+           // {url:'https://www.youtube.com/',text:"YouTube"},
+            //{url:'https://www.hotstar.com/in',text:"Hotstar"},
+            //{url:'https://www.netflix.com/',text:"Netflix"}
+            {url:'https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png',text:"Google"},
+            {url:'https://clipart-library.com/images_k/youtube-transparent-png/youtube-transparent-png-15.png',text:"YouTube"},
+            {url:'https://sportzfront.com/wp-content/uploads/2021/02/hotstar.jpg',text:"Hotstar"},
+            {url:'https://icon-library.com/images/netflix-icon-transparent/netflix-icon-transparent-29.jpg',text:"Netflix"}
+
+        ]
+        //links.forEach(item=>{
+           // const aTag=document.createElement('a')
+            //aTag.setAttribute('href',item.url)
+            //aTag.textContent=item.text
+            //document.body.appendChild(aTag)
+        //})
+        links.forEach(item=>{
+            const imgTag=document.createElement('img')
+            imgTag.setAttribute('src',item.url)
+            imgTag.setAttribute('height','100px')
+            imgTag.setAttribute('width','100px')
+            document.body.appendChild(imgTag)
+        })
+    </script>
+</body>
+</html>
