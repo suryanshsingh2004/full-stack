@@ -1,51 +1,46 @@
 import React, { useState } from 'react';
+import axios from 'axios';
+import './App.css';
 
-const DataTable() {
-  const [data, setData] = useState([]);
+const App = () => {
+  const [people, setPeople] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
 
   const fetchData = async () => {
     setLoading(true);
-    setError(null);
     try {
-      const response = await fetch('https://jsonplaceholder.typicode.com/users');
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      const result = await response.json();
-      setData(result);
-    } catch (err) {
-      setError(err.message);
+      const response = await axios.get('http://localhost:5000/get-data'); 
+      setPeople(response.data);
+    } catch (error) {
+      console.error('Error fetching data:', error);
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div>
-      <button onClick={fetchData}>Get Data</button>
-      
-      {loading && <p>Loading...</p>}
-      {error && <p>Error: {error}</p>}
-      
-      {data.length > 0 && (
+    <div className="App">
+      <h1>People Information</h1>
+      <button onClick={fetchData} disabled={loading}>
+        {loading ? 'Loading...' : 'Get Data'}
+      </button>
+      {people.length > 0 && (
         <table>
           <thead>
             <tr>
               <th>ID</th>
               <th>Name</th>
-              <th>Username</th>
+              <th>Age</th>
               <th>Email</th>
             </tr>
           </thead>
           <tbody>
-            {data.map((item) => (
-              <tr key={item.id}>
-                <td>{item.id}</td>
-                <td>{item.name}</td>
-                <td>{item.username}</td>
-                <td>{item.email}</td>
+            {people.map(person => (
+              <tr key={person.id}>
+                <td>{person.id}</td>
+                <td>{person.name}</td>
+                <td>{person.age}</td>
+                <td>{person.email}</td>
               </tr>
             ))}
           </tbody>
@@ -53,6 +48,6 @@ const DataTable() {
       )}
     </div>
   );
-}
+};
 
-export default DataTable;
+export default App;

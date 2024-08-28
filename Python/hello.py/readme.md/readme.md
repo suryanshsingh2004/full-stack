@@ -11,3 +11,4 @@ print('Inserted document id:', result.inserted_id)
 
 # Close the connection
 client.close()
+
